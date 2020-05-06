@@ -1,4 +1,5 @@
 def oxford_comma(array)
-  len = array.length - 1
-  first = 
+  last = array.pop
+  string = array.split(", ")
+  string >> "and #{last}"
 end
