@@ -1,5 +1,9 @@
 def oxford_comma(array)
-  last = array.pop
-  string = array.join(", ")
-  string << ", and #{last}"
+  if array.length > 2
+    last = array.pop
+    string = array.join(", ")
+    string << ", and #{last}"
+  else
+    array.join(" and ")
+  end
 end
